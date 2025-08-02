@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Resume Builder</h1>
+        
+        <form id="resumeForm">
+            <h2>Personal Information</h2>
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <h2>Education</h2>
+            <label for="school">School/University:</label>
+            <input type="text" id="school" name="school" required>
+
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree" required>
+
+            <label for="graduationYear">Graduation Year:</label>
+            <input type="number" id="graduationYear" name="graduationYear" required>
+
+            <h2>Experience</h2>
+            <label for="jobTitle">Job Title:</label>
+            <input type="text" id="jobTitle" name="jobTitle" required>
+
+            <label for="company">Company:</label>
+            <input type="text" id="company" name="company" required>
+
+            <label for="yearsWorked">Years Worked:</label>
+            <input type="text" id="yearsWorked" name="yearsWorked" required>
+            
+            <h2>Skills & Abilities</h2>
+            <label for="Skills">Skills:</label>
+            <input type="text" id="Skills" name="Skills" required>
+
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+
+        <div id="resumeOutput" class="resume-output">
+            <!-- The generated resume will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
